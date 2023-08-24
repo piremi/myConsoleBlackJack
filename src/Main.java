@@ -6,6 +6,7 @@ public class Main {
         Game blackjack = new Game();
         System.out.println(Suit.CLUB);
         System.out.println(Rank.ACE + " value: " + Rank.ACE.rankName);
-
+        Card myCard = new Card(Suit.SPADE, Rank.JACK);
+        System.out.println(myCard);
     }
 }
