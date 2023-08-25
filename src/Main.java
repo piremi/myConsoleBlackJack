@@ -8,5 +8,9 @@ public class Main {
         System.out.println(Rank.ACE + " value: " + Rank.ACE.rankName);
         Card myCard = new Card(Suit.SPADE, Rank.JACK);
         System.out.println(myCard);
+        Deck myDeck = new Deck();
+        myDeck.addCard(myCard);
+        myDeck.addCard(new Card(Suit.SPADE, Rank.KING));
+        System.out.println(myDeck);
     }
 }
