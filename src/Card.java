@@ -7,7 +7,7 @@ public class Card {
 
     }
     public String toString(){
-        return "[" + this.suit + " - " + this.rank + "]";
+        return "[" + this.suit + " - " + this.rank + "]" + "(" + this.rank.rankValue + ")";
 
     }
 }
