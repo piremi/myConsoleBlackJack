@@ -12,5 +12,8 @@ public class Main {
         myDeck.addCard(myCard);
         myDeck.addCard(new Card(Suit.SPADE, Rank.KING));
         System.out.println(myDeck);
+        Hand myhand = new Hand();
+        myhand.takeCardFromDeck(myDeck);
+        System.out.println("myhand: "+ myhand);
     }
 }

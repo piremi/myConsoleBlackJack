@@ -36,6 +36,12 @@ public class Deck {
 
     }
 
+    public Card takeCard(){
+        Card tempCard = deck.get(0);
+        deck.remove(0);
+        return tempCard;
+    }
+
 
 
 }
