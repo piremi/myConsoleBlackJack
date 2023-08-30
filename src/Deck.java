@@ -24,6 +24,16 @@ public class Deck {
         }
         return output;
     }
+    public void shuffleDeck(){
+        ArrayList<Card> tempArr = new ArrayList<>();
+
+        while(deck.size()>0){
+            int randomIndex = (int)(Math.random()*(deck.size()-1));
+            tempArr.add(deck.get(randomIndex));
+            deck.remove(randomIndex);
+        }
+
+    }
 
 
 

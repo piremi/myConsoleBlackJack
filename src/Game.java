@@ -5,4 +5,5 @@ public class Game {
         losses = 0;
         pushes = 0;
     }
+
 }
