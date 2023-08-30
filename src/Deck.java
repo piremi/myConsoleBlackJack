@@ -32,6 +32,7 @@ public class Deck {
             tempArr.add(deck.get(randomIndex));
             deck.remove(randomIndex);
         }
+        deck = tempArr;
 
     }
 
