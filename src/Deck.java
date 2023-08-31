@@ -6,6 +6,7 @@ public class Deck {
         deck = new ArrayList<>();
     }
     public Deck(boolean i){
+        deck = new ArrayList<Card>();
         if(i){
             for(Suit suit: Suit.values()){
                 for(Rank rank: Rank.values()){

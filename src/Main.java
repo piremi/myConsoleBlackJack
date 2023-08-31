@@ -13,7 +13,11 @@ public class Main {
         myDeck.addCard(new Card(Suit.SPADE, Rank.KING));
         System.out.println(myDeck);
         Hand myhand = new Hand();
-        myhand.takeCardFromDeck(myDeck);
+        Deck fullDeck = new Deck(true);
+        fullDeck.shuffleDeck();
+        myhand.takeCardFromDeck(fullDeck);
+        myhand.takeCardFromDeck(fullDeck);
         System.out.println("myhand: "+ myhand);
+        System.out.println("fullDeck: " + fullDeck);
     }
 }
